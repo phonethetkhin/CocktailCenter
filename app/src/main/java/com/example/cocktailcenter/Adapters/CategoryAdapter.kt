@@ -39,6 +39,7 @@ class CategoryAdapter(val categorylist: List<CategoryModel>) :
             .into(holder.imgPhoto)
         holder.cvCategory.setOnClickListener {
             val i:Intent=Intent(it.context,ProductShowcase::class.java)
+            i.putExtra("categoryname",categorylist[position].categoryname)
             it.context.startActivity(i)
 
         }

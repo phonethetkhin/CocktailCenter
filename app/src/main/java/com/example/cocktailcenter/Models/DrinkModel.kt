@@ -5,6 +5,6 @@ import com.google.gson.annotations.SerializedName
 
  data class DrinkModel(@SerializedName("drinks")
                   @Expose
-                  var drinks: List<Drink>? = null)
+                  var drinks: List<Drink>)
 
 
